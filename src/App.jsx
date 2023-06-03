@@ -2,6 +2,7 @@ import { useState } from "react";
 import Nav from "./components/Nav";
 import useData from "./useData";
 import Cards from "./components/Cards";
+import Loading from "./components/Loading";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -21,15 +22,15 @@ function App() {
         <h1 className="text-5xl py-10 text-teal-950 border-b-2 mb-10">
           Welcome to the library of games!!
         </h1>
-        {isLoading && <h1 className="px-20 py-5 ">Loading...</h1>}
+        {isLoading && <Loading />}
         {data && (
-          <div className="aspect-video grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 mt-10">
+          <div className=" grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-20 mt-10">
             {data.map((game) => (
               <Cards
                 key={game.id}
                 title={game.name}
                 imageUrl={game.background_image}
-                hasData={true}
+                Rating={game.rating}
               />
             ))}
           </div>
