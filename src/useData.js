@@ -11,11 +11,6 @@ export default function useDate(url) {
       .then((res) => {
         setIsLoading(false);
         setData(res.data.results);
-
-        console.log(
-          "🚀 ~ file: useData.js:16 ~ .then ~ res.data:",
-          res.data.results
-        );
       })
       .catch((err) => {
         setError(err.message);
