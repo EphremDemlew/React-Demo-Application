@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Nav from "./components/Nav";
-import useData from "./useData";
+import useData from "./libs/useData";
 import Cards from "./components/Cards";
 import Loading from "./components/Loading";
 
