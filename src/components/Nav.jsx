@@ -1,31 +1,19 @@
 function Nav() {
   return (
-    <div className="w-full flex bg-gray-800">
-      <div
-        className=" w-full text-xl text-white px-8 py-5 flex 
-                      justify-center items-center gap-10"
-      >
-        <div className="bg-sky-500 rounded-full h-14 w-14"></div>
-        <h1 className="bg-gray-950 hover:bg-opacity-50 rounded px-4 py-2 cursor-pointer">
-          Dashboard
-        </h1>
-        <h1 className="hover:bg-gray-600 cursor-pointer px-4 py-2 rounded">
-          Team
-        </h1>
-        <h1 className="hover:bg-gray-600 cursor-pointer px-4 py-2 rounded">
-          Project
-        </h1>
-        <h1 className="hover:bg-gray-600 cursor-pointer px-4 py-2 rounded">
-          Calendar
-        </h1>
-      </div>
-      <div className=" w-full flex justify-end items-center px-10 gap-4">
-        <div className="bg-sky-200 rounded-full h-8 w-8"></div>
-        <div className="bg-teal-500 rounded-full h-14 w-14"></div>
+    <div className="px-20 py-10 bg-teal-950  text-xl  text-white  flex justify-between items-center">
+      <p className="font-extrabold text-2xl">Adnan</p>
+      <div>
+        <ul className="flex gap-10 justify-center items-center">
+          <li className="cursor-pointer">Home</li>
+          <li className="cursor-pointer">About</li>{" "}
+          <li className="cursor-pointer">Contact</li>
+          <li className="bg-white text-teal-800 rounded hover:bg-opacity-90 font-bold cursor-pointer px-10 py-4">
+            Join
+          </li>
+        </ul>
       </div>
     </div>
   );
 }
 
 export default Nav;
-Nav;
